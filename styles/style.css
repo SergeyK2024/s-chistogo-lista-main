@@ -18,7 +18,7 @@ body {
     background-color: #fee42a;
 }
 
-.heder {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -31,10 +31,13 @@ body {
 .header__logo-image {
     width: 100%;
 }
-.heder__menu-link {
+.header__menu-link {
     color: #fff;
     font-size: 16px;
     line-height: 1.2;
+}
+.header__menu-item_active .header__menu-link {
+    text-decoration: none;
 }
 .cover {
     padding: 7px 24px 32px 20px;
