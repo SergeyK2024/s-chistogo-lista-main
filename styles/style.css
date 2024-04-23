@@ -80,6 +80,18 @@ blockquote {
     font-size: 72px;
     line-height: 1;
 }
+.accent-span {
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.intro {
+    padding: 0 20px 38px;
+}
 .intro__heading {
     display: flex;
     justify-content: space-between;
@@ -94,7 +106,7 @@ blockquote {
 }
 .intro__date {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.2; 
     white-space: nowrap;
 }
 .intro__main-text {
@@ -105,19 +117,6 @@ blockquote {
     color: #f5f5f5;
     font-size: 16px;
     line-height: 1.35;
-}
-.accent-span {
-    display: block;
-}
-.text-center {
-    text-align: center;
-}
-.text-right {
-    text-align: right;
-}
-.intro {
-    padding: 0 20px 38px;
-
 }
 .reasons{
     padding: 40px 20px;
@@ -138,21 +137,73 @@ blockquote {
 }
 
 .content-section__list {
-
-}
-
-.content-section__list-item {
-
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 0 0 16px;
+    font-size: 16px;
+    line-height: 1.35;
 }
 
 .content-section__list-accent {
-
+    font-weight: 700;
 }
 .how-to {
     padding: 40px 20px 60px;
-
 }
-footer {
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+}
+.card {
+    border-radius: 30px;
     padding: 20px;
-    
+}
+.card_theme_dark {
+    color: #f5f5f5;
+    background-color: #343434;
+}
+.card_theme_bright {
+    color: #141414;
+    background-color: #fee42a;
+}
+.card__author-photo {
+    display: block;
+    width: 100px;
+    border-radius: 50%;
+}
+.card__author-name {
+    margin: 8px 0 0;
+    font-weight: 700;
+}
+.card__title {
+    margin: 8px auto;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.35;
+}
+.card__text {
+    font-size: 16px;
+    line-height: 1.35;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fee42a;
+    padding: 20px;
+}
+.footer__links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.footer__links a {
+    color: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.25;
+    text-decoration: none;
 }
